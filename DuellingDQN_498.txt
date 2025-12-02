@@ -1,0 +1,477 @@
+
+======================================================================
+  DQN TYPE: DuellingDQN
+======================================================================
+
+Configuration:
+----------------------------------------------------------------------
+  ENV_ID              : ALE/SpaceInvaders-v5
+  SEED                : 18
+  N_FRAMES            : 4
+  N_ACTIONS           : 6
+  N_EPISODES          : 6000
+  LEARNING_RATE       : 1e-05
+  GAMMA               : 0.99
+  BATCH_SIZE          : 32
+  EPSILON_START       : 1.0
+  EPSILON_END         : 0.1
+  EPSILON_DECAY       : 100000
+  BUFFER_SIZE         : 150000
+  TARGET_UPDATE       : 10000
+  CHECKPOINT_EVERY    : 400
+  USE_GDRIVE          : False
+  BEST_MODELS_DIR     : ./best_models
+  DQN_TYPE            : DuellingDQN
+  USE_PER             : False
+  LR_SCHEDULER        : False
+  LR_GAMMA            : 0.999
+  PER_ALPHA           : 0.6
+  PER_BETA_START      : 0.4
+  PER_BETA_FRAMES     : 100000
+  PER_EPSILON         : 1e-06
+======================================================================
+
+
+💡 Press Ctrl+C anytime to stop training and save progress
+
+--- TRAINING STARTED: 2025-12-01 09:32:50 ---
+
+Episode 0 | Score: 20.0 | Avg: 20.00 | Eps: 0.997 | LR: 0.000010 | Steps: 299
+		New best avg: 20.00 - saved to DuellingDQN_20251201_093253_best.pth
+		RAM: 5.9% | GPU: 0.14GB | Buffer: 299/150000
+Episode 10 | Score: 70.0 | Avg: 124.55 | Eps: 0.951 | LR: 0.000010 | Steps: 5591
+Episode 20 | Score: 210.0 | Avg: 133.10 | Eps: 0.911 | LR: 0.000010 | Steps: 10449
+Episode 30 | Score: 120.0 | Avg: 137.42 | Eps: 0.873 | LR: 0.000010 | Steps: 15257
+Episode 40 | Score: 90.0 | Avg: 140.00 | Eps: 0.835 | LR: 0.000010 | Steps: 20255
+		RAM: 13.7% | GPU: 0.14GB | Buffer: 20255/150000
+Episode 50 | Score: 260.0 | Avg: 152.45 | Eps: 0.794 | LR: 0.000010 | Steps: 25924
+Episode 60 | Score: 345.0 | Avg: 159.43 | Eps: 0.754 | LR: 0.000010 | Steps: 31950
+Episode 70 | Score: 305.0 | Avg: 161.83 | Eps: 0.718 | LR: 0.000010 | Steps: 37575
+Episode 80 | Score: 80.0 | Avg: 165.80 | Eps: 0.685 | LR: 0.000010 | Steps: 43037
+		RAM: 22.9% | GPU: 0.14GB | Buffer: 43037/150000
+Episode 90 | Score: 310.0 | Avg: 160.22 | Eps: 0.656 | LR: 0.000010 | Steps: 48154
+Episode 100 | Score: 210.0 | Avg: 158.65 | Eps: 0.627 | LR: 0.000010 | Steps: 53529
+Episode 110 | Score: 150.0 | Avg: 163.60 | Eps: 0.599 | LR: 0.000010 | Steps: 58880
+Episode 120 | Score: 590.0 | Avg: 170.60 | Eps: 0.573 | LR: 0.000010 | Steps: 64401
+		RAM: 31.4% | GPU: 0.14GB | Buffer: 64401/150000
+Episode 130 | Score: 70.0 | Avg: 175.15 | Eps: 0.547 | LR: 0.000010 | Steps: 69915
+Episode 140 | Score: 295.0 | Avg: 180.50 | Eps: 0.521 | LR: 0.000010 | Steps: 75998
+Episode 150 | Score: 320.0 | Avg: 184.25 | Eps: 0.496 | LR: 0.000010 | Steps: 82221
+Episode 160 | Score: 115.0 | Avg: 187.90 | Eps: 0.471 | LR: 0.000010 | Steps: 88627
+		RAM: 41.1% | GPU: 0.14GB | Buffer: 88627/150000
+Episode 170 | Score: 295.0 | Avg: 186.90 | Eps: 0.452 | LR: 0.000010 | Steps: 94018
+Episode 180 | Score: 135.0 | Avg: 187.75 | Eps: 0.431 | LR: 0.000010 | Steps: 100066
+Episode 190 | Score: 105.0 | Avg: 196.55 | Eps: 0.411 | LR: 0.000010 | Steps: 106155
+Episode 200 | Score: 110.0 | Avg: 204.25 | Eps: 0.393 | LR: 0.000010 | Steps: 112275
+		RAM: 50.6% | GPU: 0.14GB | Buffer: 112275/150000
+Episode 210 | Score: 85.0 | Avg: 205.10 | Eps: 0.375 | LR: 0.000010 | Steps: 118452
+Episode 220 | Score: 260.0 | Avg: 204.40 | Eps: 0.360 | LR: 0.000010 | Steps: 124316
+Episode 230 | Score: 110.0 | Avg: 206.65 | Eps: 0.345 | LR: 0.000010 | Steps: 130117
+Episode 240 | Score: 170.0 | Avg: 205.85 | Eps: 0.330 | LR: 0.000010 | Steps: 136368
+		RAM: 60.3% | GPU: 0.14GB | Buffer: 136368/150000
+Episode 250 | Score: 110.0 | Avg: 200.10 | Eps: 0.317 | LR: 0.000010 | Steps: 142061
+Episode 260 | Score: 110.0 | Avg: 192.10 | Eps: 0.306 | LR: 0.000010 | Steps: 147558
+Episode 270 | Score: 140.0 | Avg: 192.65 | Eps: 0.295 | LR: 0.000010 | Steps: 153016
+Episode 280 | Score: 125.0 | Avg: 192.10 | Eps: 0.283 | LR: 0.000010 | Steps: 159088
+		RAM: 65.7% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 290 | Score: 385.0 | Avg: 189.55 | Eps: 0.274 | LR: 0.000010 | Steps: 164340
+Episode 300 | Score: 35.0 | Avg: 184.30 | Eps: 0.265 | LR: 0.000010 | Steps: 169381
+Episode 310 | Score: 155.0 | Avg: 178.45 | Eps: 0.257 | LR: 0.000010 | Steps: 174300
+Episode 320 | Score: 105.0 | Avg: 173.80 | Eps: 0.249 | LR: 0.000010 | Steps: 179654
+		RAM: 65.7% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 330 | Score: 190.0 | Avg: 171.25 | Eps: 0.241 | LR: 0.000010 | Steps: 185668
+Episode 340 | Score: 285.0 | Avg: 177.75 | Eps: 0.232 | LR: 0.000010 | Steps: 191782
+Episode 350 | Score: 55.0 | Avg: 173.55 | Eps: 0.226 | LR: 0.000010 | Steps: 196916
+Episode 360 | Score: 195.0 | Avg: 180.05 | Eps: 0.219 | LR: 0.000010 | Steps: 202647
+		RAM: 65.8% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 370 | Score: 125.0 | Avg: 185.65 | Eps: 0.212 | LR: 0.000010 | Steps: 208607
+Episode 380 | Score: 525.0 | Avg: 190.60 | Eps: 0.205 | LR: 0.000010 | Steps: 214408
+Episode 390 | Score: 155.0 | Avg: 195.50 | Eps: 0.199 | LR: 0.000010 | Steps: 220838
+Episode 400 | Score: 65.0 | Avg: 198.75 | Eps: 0.193 | LR: 0.000010 | Steps: 226713
+		New best avg: 198.75 - saved to DuellingDQN_20251201_100557_best.pth
+		RAM: 65.9% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 410 | Score: 260.0 | Avg: 205.35 | Eps: 0.188 | LR: 0.000010 | Steps: 232297
+Episode 420 | Score: 325.0 | Avg: 211.45 | Eps: 0.183 | LR: 0.000010 | Steps: 238524
+Episode 430 | Score: 340.0 | Avg: 213.80 | Eps: 0.178 | LR: 0.000010 | Steps: 244402
+Episode 440 | Score: 270.0 | Avg: 205.40 | Eps: 0.174 | LR: 0.000010 | Steps: 249418
+		RAM: 65.9% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 450 | Score: 305.0 | Avg: 206.90 | Eps: 0.170 | LR: 0.000010 | Steps: 254679
+Episode 460 | Score: 210.0 | Avg: 201.60 | Eps: 0.167 | LR: 0.000010 | Steps: 260387
+Episode 470 | Score: 385.0 | Avg: 201.65 | Eps: 0.163 | LR: 0.000010 | Steps: 266548
+Episode 480 | Score: 65.0 | Avg: 205.20 | Eps: 0.159 | LR: 0.000010 | Steps: 272627
+		RAM: 65.8% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 490 | Score: 180.0 | Avg: 199.70 | Eps: 0.156 | LR: 0.000010 | Steps: 277494
+Episode 500 | Score: 255.0 | Avg: 204.55 | Eps: 0.152 | LR: 0.000010 | Steps: 284391
+Episode 510 | Score: 155.0 | Avg: 210.30 | Eps: 0.149 | LR: 0.000010 | Steps: 291375
+Episode 520 | Score: 460.0 | Avg: 211.35 | Eps: 0.146 | LR: 0.000010 | Steps: 297186
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 530 | Score: 120.0 | Avg: 211.85 | Eps: 0.143 | LR: 0.000010 | Steps: 303221
+Episode 540 | Score: 230.0 | Avg: 210.75 | Eps: 0.141 | LR: 0.000010 | Steps: 309031
+Episode 550 | Score: 175.0 | Avg: 218.05 | Eps: 0.138 | LR: 0.000010 | Steps: 315329
+Episode 560 | Score: 210.0 | Avg: 221.05 | Eps: 0.136 | LR: 0.000010 | Steps: 321333
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 570 | Score: 180.0 | Avg: 221.65 | Eps: 0.134 | LR: 0.000010 | Steps: 327049
+Episode 580 | Score: 290.0 | Avg: 215.95 | Eps: 0.132 | LR: 0.000010 | Steps: 334583
+Episode 590 | Score: 155.0 | Avg: 227.15 | Eps: 0.130 | LR: 0.000010 | Steps: 341300
+Episode 600 | Score: 150.0 | Avg: 230.80 | Eps: 0.128 | LR: 0.000010 | Steps: 347673
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 610 | Score: 505.0 | Avg: 232.25 | Eps: 0.126 | LR: 0.000010 | Steps: 354759
+Episode 620 | Score: 210.0 | Avg: 233.80 | Eps: 0.124 | LR: 0.000010 | Steps: 360745
+Episode 630 | Score: 215.0 | Avg: 242.40 | Eps: 0.123 | LR: 0.000010 | Steps: 367765
+Episode 640 | Score: 295.0 | Avg: 254.95 | Eps: 0.121 | LR: 0.000010 | Steps: 374775
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 650 | Score: 210.0 | Avg: 257.70 | Eps: 0.120 | LR: 0.000010 | Steps: 380921
+Episode 660 | Score: 165.0 | Avg: 266.10 | Eps: 0.119 | LR: 0.000010 | Steps: 387152
+Episode 670 | Score: 210.0 | Avg: 273.55 | Eps: 0.117 | LR: 0.000010 | Steps: 394225
+Episode 680 | Score: 210.0 | Avg: 276.50 | Eps: 0.116 | LR: 0.000010 | Steps: 400751
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 690 | Score: 185.0 | Avg: 273.35 | Eps: 0.115 | LR: 0.000010 | Steps: 407317
+Episode 700 | Score: 210.0 | Avg: 275.80 | Eps: 0.114 | LR: 0.000010 | Steps: 414650
+Episode 710 | Score: 155.0 | Avg: 274.00 | Eps: 0.113 | LR: 0.000010 | Steps: 420876
+Episode 720 | Score: 105.0 | Avg: 267.50 | Eps: 0.113 | LR: 0.000010 | Steps: 426068
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 730 | Score: 185.0 | Avg: 261.50 | Eps: 0.112 | LR: 0.000010 | Steps: 431709
+Episode 740 | Score: 425.0 | Avg: 263.45 | Eps: 0.111 | LR: 0.000010 | Steps: 437698
+Episode 750 | Score: 370.0 | Avg: 263.75 | Eps: 0.111 | LR: 0.000010 | Steps: 443243
+Episode 760 | Score: 245.0 | Avg: 264.75 | Eps: 0.110 | LR: 0.000010 | Steps: 450015
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 770 | Score: 120.0 | Avg: 257.10 | Eps: 0.109 | LR: 0.000010 | Steps: 455144
+Episode 780 | Score: 180.0 | Avg: 248.85 | Eps: 0.109 | LR: 0.000010 | Steps: 459766
+Episode 790 | Score: 280.0 | Avg: 249.10 | Eps: 0.108 | LR: 0.000010 | Steps: 466290
+Episode 800 | Score: 180.0 | Avg: 239.00 | Eps: 0.108 | LR: 0.000010 | Steps: 471969
+		New best avg: 239.00 - saved to DuellingDQN_20251201_104316_best.pth
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 810 | Score: 210.0 | Avg: 232.40 | Eps: 0.108 | LR: 0.000010 | Steps: 477169
+Episode 820 | Score: 225.0 | Avg: 234.60 | Eps: 0.107 | LR: 0.000010 | Steps: 482418
+Episode 830 | Score: 155.0 | Avg: 228.95 | Eps: 0.107 | LR: 0.000010 | Steps: 487902
+Episode 840 | Score: 175.0 | Avg: 225.05 | Eps: 0.106 | LR: 0.000010 | Steps: 494279
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 850 | Score: 210.0 | Avg: 226.15 | Eps: 0.106 | LR: 0.000010 | Steps: 501097
+Episode 860 | Score: 265.0 | Avg: 222.70 | Eps: 0.106 | LR: 0.000010 | Steps: 507528
+Episode 870 | Score: 210.0 | Avg: 231.50 | Eps: 0.105 | LR: 0.000010 | Steps: 514861
+Episode 880 | Score: 320.0 | Avg: 243.20 | Eps: 0.105 | LR: 0.000010 | Steps: 521218
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 890 | Score: 260.0 | Avg: 248.05 | Eps: 0.105 | LR: 0.000010 | Steps: 527853
+Episode 900 | Score: 210.0 | Avg: 256.00 | Eps: 0.104 | LR: 0.000010 | Steps: 534361
+Episode 910 | Score: 155.0 | Avg: 263.70 | Eps: 0.104 | LR: 0.000010 | Steps: 540717
+Episode 920 | Score: 330.0 | Avg: 274.10 | Eps: 0.104 | LR: 0.000010 | Steps: 547306
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 930 | Score: 210.0 | Avg: 286.65 | Eps: 0.104 | LR: 0.000010 | Steps: 554598
+Episode 940 | Score: 290.0 | Avg: 288.15 | Eps: 0.103 | LR: 0.000010 | Steps: 562352
+Episode 950 | Score: 485.0 | Avg: 295.35 | Eps: 0.103 | LR: 0.000010 | Steps: 569711
+Episode 960 | Score: 210.0 | Avg: 298.35 | Eps: 0.103 | LR: 0.000010 | Steps: 576181
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 970 | Score: 240.0 | Avg: 292.25 | Eps: 0.103 | LR: 0.000010 | Steps: 582583
+Episode 980 | Score: 210.0 | Avg: 289.40 | Eps: 0.102 | LR: 0.000010 | Steps: 589023
+Episode 990 | Score: 260.0 | Avg: 289.60 | Eps: 0.102 | LR: 0.000010 | Steps: 596484
+Episode 1000 | Score: 540.0 | Avg: 288.50 | Eps: 0.102 | LR: 0.000010 | Steps: 602966
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1010 | Score: 240.0 | Avg: 288.90 | Eps: 0.102 | LR: 0.000010 | Steps: 609951
+Episode 1020 | Score: 155.0 | Avg: 291.25 | Eps: 0.102 | LR: 0.000010 | Steps: 616746
+Episode 1030 | Score: 210.0 | Avg: 287.20 | Eps: 0.102 | LR: 0.000010 | Steps: 622860
+Episode 1040 | Score: 180.0 | Avg: 289.40 | Eps: 0.102 | LR: 0.000010 | Steps: 630023
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1050 | Score: 215.0 | Avg: 288.20 | Eps: 0.102 | LR: 0.000010 | Steps: 637250
+Episode 1060 | Score: 315.0 | Avg: 283.25 | Eps: 0.101 | LR: 0.000010 | Steps: 643031
+Episode 1070 | Score: 210.0 | Avg: 286.75 | Eps: 0.101 | LR: 0.000010 | Steps: 649931
+Episode 1080 | Score: 300.0 | Avg: 288.80 | Eps: 0.101 | LR: 0.000010 | Steps: 656658
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1090 | Score: 490.0 | Avg: 294.00 | Eps: 0.101 | LR: 0.000010 | Steps: 663204
+Episode 1100 | Score: 365.0 | Avg: 310.00 | Eps: 0.101 | LR: 0.000010 | Steps: 671613
+Episode 1110 | Score: 210.0 | Avg: 320.60 | Eps: 0.101 | LR: 0.000010 | Steps: 679874
+Episode 1120 | Score: 485.0 | Avg: 331.05 | Eps: 0.101 | LR: 0.000010 | Steps: 687990
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1130 | Score: 215.0 | Avg: 341.10 | Eps: 0.101 | LR: 0.000010 | Steps: 695249
+Episode 1140 | Score: 290.0 | Avg: 353.65 | Eps: 0.101 | LR: 0.000010 | Steps: 702560
+Episode 1150 | Score: 180.0 | Avg: 357.50 | Eps: 0.101 | LR: 0.000010 | Steps: 710117
+Episode 1160 | Score: 335.0 | Avg: 377.70 | Eps: 0.101 | LR: 0.000010 | Steps: 718068
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1170 | Score: 365.0 | Avg: 378.20 | Eps: 0.101 | LR: 0.000010 | Steps: 725589
+Episode 1180 | Score: 470.0 | Avg: 389.70 | Eps: 0.101 | LR: 0.000010 | Steps: 734167
+Episode 1190 | Score: 505.0 | Avg: 395.45 | Eps: 0.101 | LR: 0.000010 | Steps: 741563
+Episode 1200 | Score: 395.0 | Avg: 390.40 | Eps: 0.100 | LR: 0.000010 | Steps: 749605
+		New best avg: 390.40 - saved to DuellingDQN_20251201_112540_best.pth
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1210 | Score: 250.0 | Avg: 393.85 | Eps: 0.100 | LR: 0.000010 | Steps: 757251
+Episode 1220 | Score: 625.0 | Avg: 390.90 | Eps: 0.100 | LR: 0.000010 | Steps: 765187
+Episode 1230 | Score: 275.0 | Avg: 380.15 | Eps: 0.100 | LR: 0.000010 | Steps: 771858
+Episode 1240 | Score: 335.0 | Avg: 378.25 | Eps: 0.100 | LR: 0.000010 | Steps: 779869
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1250 | Score: 555.0 | Avg: 388.70 | Eps: 0.100 | LR: 0.000010 | Steps: 788940
+Episode 1260 | Score: 155.0 | Avg: 385.65 | Eps: 0.100 | LR: 0.000010 | Steps: 797281
+Episode 1270 | Score: 560.0 | Avg: 395.30 | Eps: 0.100 | LR: 0.000010 | Steps: 805455
+Episode 1280 | Score: 420.0 | Avg: 399.30 | Eps: 0.100 | LR: 0.000010 | Steps: 813382
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1290 | Score: 320.0 | Avg: 398.50 | Eps: 0.100 | LR: 0.000010 | Steps: 821507
+Episode 1300 | Score: 435.0 | Avg: 407.65 | Eps: 0.100 | LR: 0.000010 | Steps: 830892
+Episode 1310 | Score: 280.0 | Avg: 405.90 | Eps: 0.100 | LR: 0.000010 | Steps: 838884
+Episode 1320 | Score: 495.0 | Avg: 403.45 | Eps: 0.100 | LR: 0.000010 | Steps: 847277
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1330 | Score: 365.0 | Avg: 420.85 | Eps: 0.100 | LR: 0.000010 | Steps: 856630
+Episode 1340 | Score: 620.0 | Avg: 423.05 | Eps: 0.100 | LR: 0.000010 | Steps: 864779
+Episode 1350 | Score: 285.0 | Avg: 419.45 | Eps: 0.100 | LR: 0.000010 | Steps: 873129
+Episode 1360 | Score: 460.0 | Avg: 422.75 | Eps: 0.100 | LR: 0.000010 | Steps: 881954
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1370 | Score: 620.0 | Avg: 435.35 | Eps: 0.100 | LR: 0.000010 | Steps: 891497
+Episode 1380 | Score: 790.0 | Avg: 434.70 | Eps: 0.100 | LR: 0.000010 | Steps: 900195
+Episode 1390 | Score: 620.0 | Avg: 441.40 | Eps: 0.100 | LR: 0.000010 | Steps: 909268
+Episode 1400 | Score: 655.0 | Avg: 442.30 | Eps: 0.100 | LR: 0.000010 | Steps: 918009
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1410 | Score: 695.0 | Avg: 446.10 | Eps: 0.100 | LR: 0.000010 | Steps: 926715
+Episode 1420 | Score: 545.0 | Avg: 452.70 | Eps: 0.100 | LR: 0.000010 | Steps: 935024
+Episode 1430 | Score: 665.0 | Avg: 464.95 | Eps: 0.100 | LR: 0.000010 | Steps: 944970
+Episode 1440 | Score: 290.0 | Avg: 466.85 | Eps: 0.100 | LR: 0.000010 | Steps: 953115
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1450 | Score: 545.0 | Avg: 470.05 | Eps: 0.100 | LR: 0.000010 | Steps: 961909
+Episode 1460 | Score: 275.0 | Avg: 469.50 | Eps: 0.100 | LR: 0.000010 | Steps: 970582
+Episode 1470 | Score: 620.0 | Avg: 463.20 | Eps: 0.100 | LR: 0.000010 | Steps: 979810
+Episode 1480 | Score: 450.0 | Avg: 454.80 | Eps: 0.100 | LR: 0.000010 | Steps: 987757
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1490 | Score: 825.0 | Avg: 457.55 | Eps: 0.100 | LR: 0.000010 | Steps: 996904
+Episode 1500 | Score: 560.0 | Avg: 459.50 | Eps: 0.100 | LR: 0.000010 | Steps: 1005574
+Episode 1510 | Score: 545.0 | Avg: 467.15 | Eps: 0.100 | LR: 0.000010 | Steps: 1014505
+Episode 1520 | Score: 470.0 | Avg: 469.25 | Eps: 0.100 | LR: 0.000010 | Steps: 1023204
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1530 | Score: 260.0 | Avg: 458.85 | Eps: 0.100 | LR: 0.000010 | Steps: 1031854
+Episode 1540 | Score: 520.0 | Avg: 458.15 | Eps: 0.100 | LR: 0.000010 | Steps: 1040934
+Episode 1550 | Score: 290.0 | Avg: 450.05 | Eps: 0.100 | LR: 0.000010 | Steps: 1049818
+Episode 1560 | Score: 500.0 | Avg: 453.45 | Eps: 0.100 | LR: 0.000010 | Steps: 1059412
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1570 | Score: 870.0 | Avg: 466.75 | Eps: 0.100 | LR: 0.000010 | Steps: 1069563
+Episode 1580 | Score: 310.0 | Avg: 473.25 | Eps: 0.100 | LR: 0.000010 | Steps: 1079121
+Episode 1590 | Score: 420.0 | Avg: 464.30 | Eps: 0.100 | LR: 0.000010 | Steps: 1087909
+Episode 1600 | Score: 625.0 | Avg: 462.10 | Eps: 0.100 | LR: 0.000010 | Steps: 1097442
+		New best avg: 462.10 - saved to DuellingDQN_20251201_121900_best.pth
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1610 | Score: 300.0 | Avg: 459.85 | Eps: 0.100 | LR: 0.000010 | Steps: 1106537
+Episode 1620 | Score: 650.0 | Avg: 463.05 | Eps: 0.100 | LR: 0.000010 | Steps: 1115875
+Episode 1630 | Score: 620.0 | Avg: 474.65 | Eps: 0.100 | LR: 0.000010 | Steps: 1125154
+Episode 1640 | Score: 345.0 | Avg: 474.65 | Eps: 0.100 | LR: 0.000010 | Steps: 1134109
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1650 | Score: 285.0 | Avg: 483.20 | Eps: 0.100 | LR: 0.000010 | Steps: 1143881
+Episode 1660 | Score: 425.0 | Avg: 485.90 | Eps: 0.100 | LR: 0.000010 | Steps: 1153925
+Episode 1670 | Score: 510.0 | Avg: 478.40 | Eps: 0.100 | LR: 0.000010 | Steps: 1164593
+Episode 1680 | Score: 670.0 | Avg: 493.85 | Eps: 0.100 | LR: 0.000010 | Steps: 1175919
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1690 | Score: 450.0 | Avg: 497.90 | Eps: 0.100 | LR: 0.000010 | Steps: 1186024
+Episode 1700 | Score: 500.0 | Avg: 500.20 | Eps: 0.100 | LR: 0.000010 | Steps: 1196121
+Episode 1710 | Score: 565.0 | Avg: 499.75 | Eps: 0.100 | LR: 0.000010 | Steps: 1206093
+Episode 1720 | Score: 620.0 | Avg: 497.00 | Eps: 0.100 | LR: 0.000010 | Steps: 1215378
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1730 | Score: 335.0 | Avg: 492.60 | Eps: 0.100 | LR: 0.000010 | Steps: 1224941
+Episode 1740 | Score: 210.0 | Avg: 504.65 | Eps: 0.100 | LR: 0.000010 | Steps: 1234508
+Episode 1750 | Score: 910.0 | Avg: 508.85 | Eps: 0.100 | LR: 0.000010 | Steps: 1244414
+Episode 1760 | Score: 310.0 | Avg: 504.05 | Eps: 0.100 | LR: 0.000010 | Steps: 1252119
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1770 | Score: 360.0 | Avg: 499.85 | Eps: 0.100 | LR: 0.000010 | Steps: 1260812
+Episode 1780 | Score: 410.0 | Avg: 497.65 | Eps: 0.100 | LR: 0.000010 | Steps: 1269814
+Episode 1790 | Score: 565.0 | Avg: 497.35 | Eps: 0.100 | LR: 0.000010 | Steps: 1278714
+Episode 1800 | Score: 380.0 | Avg: 496.80 | Eps: 0.100 | LR: 0.000010 | Steps: 1287332
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1810 | Score: 620.0 | Avg: 490.05 | Eps: 0.100 | LR: 0.000010 | Steps: 1295601
+Episode 1820 | Score: 310.0 | Avg: 486.50 | Eps: 0.100 | LR: 0.000010 | Steps: 1304363
+Episode 1830 | Score: 345.0 | Avg: 480.60 | Eps: 0.100 | LR: 0.000010 | Steps: 1313115
+Episode 1840 | Score: 450.0 | Avg: 466.55 | Eps: 0.100 | LR: 0.000010 | Steps: 1321623
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1850 | Score: 285.0 | Avg: 456.35 | Eps: 0.100 | LR: 0.000010 | Steps: 1329460
+Episode 1860 | Score: 625.0 | Avg: 464.35 | Eps: 0.100 | LR: 0.000010 | Steps: 1338261
+Episode 1870 | Score: 210.0 | Avg: 469.45 | Eps: 0.100 | LR: 0.000010 | Steps: 1347267
+Episode 1880 | Score: 395.0 | Avg: 457.80 | Eps: 0.100 | LR: 0.000010 | Steps: 1355264
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1890 | Score: 245.0 | Avg: 452.40 | Eps: 0.100 | LR: 0.000010 | Steps: 1363506
+Episode 1900 | Score: 365.0 | Avg: 442.90 | Eps: 0.100 | LR: 0.000010 | Steps: 1371594
+Episode 1910 | Score: 555.0 | Avg: 447.55 | Eps: 0.100 | LR: 0.000010 | Steps: 1381010
+Episode 1920 | Score: 345.0 | Avg: 444.10 | Eps: 0.100 | LR: 0.000010 | Steps: 1388655
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1930 | Score: 670.0 | Avg: 450.75 | Eps: 0.100 | LR: 0.000010 | Steps: 1399204
+Episode 1940 | Score: 755.0 | Avg: 468.70 | Eps: 0.100 | LR: 0.000010 | Steps: 1410384
+Episode 1950 | Score: 450.0 | Avg: 471.00 | Eps: 0.100 | LR: 0.000010 | Steps: 1419732
+Episode 1960 | Score: 330.0 | Avg: 463.50 | Eps: 0.100 | LR: 0.000010 | Steps: 1428731
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 1970 | Score: 345.0 | Avg: 470.50 | Eps: 0.100 | LR: 0.000010 | Steps: 1439157
+Episode 1980 | Score: 495.0 | Avg: 485.60 | Eps: 0.100 | LR: 0.000010 | Steps: 1449967
+Episode 1990 | Score: 660.0 | Avg: 489.90 | Eps: 0.100 | LR: 0.000010 | Steps: 1457696
+Episode 2000 | Score: 375.0 | Avg: 498.50 | Eps: 0.100 | LR: 0.000010 | Steps: 1465876
+		New best avg: 498.50 - saved to DuellingDQN_20251201_131521_best.pth
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2010 | Score: 495.0 | Avg: 512.40 | Eps: 0.100 | LR: 0.000010 | Steps: 1476091
+Episode 2020 | Score: 475.0 | Avg: 517.30 | Eps: 0.100 | LR: 0.000010 | Steps: 1484698
+Episode 2030 | Score: 475.0 | Avg: 513.50 | Eps: 0.100 | LR: 0.000010 | Steps: 1494939
+Episode 2040 | Score: 670.0 | Avg: 500.15 | Eps: 0.100 | LR: 0.000010 | Steps: 1504463
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2050 | Score: 275.0 | Avg: 508.65 | Eps: 0.100 | LR: 0.000010 | Steps: 1513698
+Episode 2060 | Score: 535.0 | Avg: 511.05 | Eps: 0.100 | LR: 0.000010 | Steps: 1523638
+Episode 2070 | Score: 450.0 | Avg: 511.20 | Eps: 0.100 | LR: 0.000010 | Steps: 1533694
+Episode 2080 | Score: 840.0 | Avg: 505.55 | Eps: 0.100 | LR: 0.000010 | Steps: 1542181
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2090 | Score: 595.0 | Avg: 513.20 | Eps: 0.100 | LR: 0.000010 | Steps: 1550743
+Episode 2100 | Score: 610.0 | Avg: 523.05 | Eps: 0.100 | LR: 0.000010 | Steps: 1561513
+Episode 2110 | Score: 725.0 | Avg: 521.15 | Eps: 0.100 | LR: 0.000010 | Steps: 1571670
+Episode 2120 | Score: 425.0 | Avg: 525.90 | Eps: 0.100 | LR: 0.000010 | Steps: 1581198
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2130 | Score: 345.0 | Avg: 530.15 | Eps: 0.100 | LR: 0.000010 | Steps: 1590535
+Episode 2140 | Score: 955.0 | Avg: 535.60 | Eps: 0.100 | LR: 0.000010 | Steps: 1599683
+Episode 2150 | Score: 650.0 | Avg: 536.10 | Eps: 0.100 | LR: 0.000010 | Steps: 1608528
+Episode 2160 | Score: 465.0 | Avg: 537.25 | Eps: 0.100 | LR: 0.000010 | Steps: 1617717
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2170 | Score: 390.0 | Avg: 525.05 | Eps: 0.100 | LR: 0.000010 | Steps: 1626180
+Episode 2180 | Score: 940.0 | Avg: 530.95 | Eps: 0.100 | LR: 0.000010 | Steps: 1635882
+Episode 2190 | Score: 360.0 | Avg: 521.00 | Eps: 0.100 | LR: 0.000010 | Steps: 1644145
+Episode 2200 | Score: 360.0 | Avg: 505.20 | Eps: 0.100 | LR: 0.000010 | Steps: 1652645
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2210 | Score: 395.0 | Avg: 488.85 | Eps: 0.100 | LR: 0.000010 | Steps: 1661345
+Episode 2220 | Score: 315.0 | Avg: 489.30 | Eps: 0.100 | LR: 0.000010 | Steps: 1670501
+Episode 2230 | Score: 555.0 | Avg: 474.35 | Eps: 0.100 | LR: 0.000010 | Steps: 1678010
+Episode 2240 | Score: 505.0 | Avg: 476.25 | Eps: 0.100 | LR: 0.000010 | Steps: 1687119
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2250 | Score: 700.0 | Avg: 477.20 | Eps: 0.100 | LR: 0.000010 | Steps: 1696578
+Episode 2260 | Score: 755.0 | Avg: 472.90 | Eps: 0.100 | LR: 0.000010 | Steps: 1704516
+Episode 2270 | Score: 565.0 | Avg: 465.85 | Eps: 0.100 | LR: 0.000010 | Steps: 1711717
+Episode 2280 | Score: 470.0 | Avg: 453.65 | Eps: 0.100 | LR: 0.000010 | Steps: 1719573
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2290 | Score: 495.0 | Avg: 454.60 | Eps: 0.100 | LR: 0.000010 | Steps: 1727535
+Episode 2300 | Score: 315.0 | Avg: 452.15 | Eps: 0.100 | LR: 0.000010 | Steps: 1735148
+Episode 2310 | Score: 210.0 | Avg: 452.75 | Eps: 0.100 | LR: 0.000010 | Steps: 1743108
+Episode 2320 | Score: 395.0 | Avg: 449.15 | Eps: 0.100 | LR: 0.000010 | Steps: 1751331
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2330 | Score: 180.0 | Avg: 449.20 | Eps: 0.100 | LR: 0.000010 | Steps: 1757957
+Episode 2340 | Score: 935.0 | Avg: 437.40 | Eps: 0.100 | LR: 0.000010 | Steps: 1764895
+Episode 2350 | Score: 415.0 | Avg: 429.30 | Eps: 0.100 | LR: 0.000010 | Steps: 1773503
+Episode 2360 | Score: 500.0 | Avg: 427.35 | Eps: 0.100 | LR: 0.000010 | Steps: 1781622
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2370 | Score: 440.0 | Avg: 431.55 | Eps: 0.100 | LR: 0.000010 | Steps: 1790341
+Episode 2380 | Score: 750.0 | Avg: 433.25 | Eps: 0.100 | LR: 0.000010 | Steps: 1799357
+Episode 2390 | Score: 210.0 | Avg: 426.45 | Eps: 0.100 | LR: 0.000010 | Steps: 1806262
+Episode 2400 | Score: 360.0 | Avg: 443.00 | Eps: 0.100 | LR: 0.000010 | Steps: 1815921
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2410 | Score: 125.0 | Avg: 454.75 | Eps: 0.100 | LR: 0.000010 | Steps: 1824464
+Episode 2420 | Score: 595.0 | Avg: 461.60 | Eps: 0.100 | LR: 0.000010 | Steps: 1834076
+Episode 2430 | Score: 350.0 | Avg: 468.40 | Eps: 0.100 | LR: 0.000010 | Steps: 1842196
+Episode 2440 | Score: 285.0 | Avg: 477.60 | Eps: 0.100 | LR: 0.000010 | Steps: 1852710
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2450 | Score: 330.0 | Avg: 487.10 | Eps: 0.100 | LR: 0.000010 | Steps: 1860976
+Episode 2460 | Score: 560.0 | Avg: 493.00 | Eps: 0.100 | LR: 0.000010 | Steps: 1869279
+Episode 2470 | Score: 290.0 | Avg: 496.00 | Eps: 0.100 | LR: 0.000010 | Steps: 1877660
+Episode 2480 | Score: 575.0 | Avg: 490.45 | Eps: 0.100 | LR: 0.000010 | Steps: 1886047
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2490 | Score: 395.0 | Avg: 501.70 | Eps: 0.100 | LR: 0.000010 | Steps: 1894243
+Episode 2500 | Score: 590.0 | Avg: 486.15 | Eps: 0.100 | LR: 0.000010 | Steps: 1902148
+Episode 2510 | Score: 380.0 | Avg: 479.05 | Eps: 0.100 | LR: 0.000010 | Steps: 1911035
+Episode 2520 | Score: 565.0 | Avg: 475.60 | Eps: 0.100 | LR: 0.000010 | Steps: 1919067
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2530 | Score: 575.0 | Avg: 471.85 | Eps: 0.100 | LR: 0.000010 | Steps: 1926856
+Episode 2540 | Score: 485.0 | Avg: 459.45 | Eps: 0.100 | LR: 0.000010 | Steps: 1934184
+Episode 2550 | Score: 395.0 | Avg: 454.60 | Eps: 0.100 | LR: 0.000010 | Steps: 1943104
+Episode 2560 | Score: 555.0 | Avg: 456.90 | Eps: 0.100 | LR: 0.000010 | Steps: 1952379
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2570 | Score: 155.0 | Avg: 454.70 | Eps: 0.100 | LR: 0.000010 | Steps: 1960918
+Episode 2580 | Score: 480.0 | Avg: 464.05 | Eps: 0.100 | LR: 0.000010 | Steps: 1970040
+Episode 2590 | Score: 390.0 | Avg: 456.85 | Eps: 0.100 | LR: 0.000010 | Steps: 1977240
+Episode 2600 | Score: 560.0 | Avg: 465.70 | Eps: 0.100 | LR: 0.000010 | Steps: 1985409
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2610 | Score: 330.0 | Avg: 458.55 | Eps: 0.100 | LR: 0.000010 | Steps: 1992302
+Episode 2620 | Score: 445.0 | Avg: 466.15 | Eps: 0.100 | LR: 0.000010 | Steps: 2002143
+Episode 2630 | Score: 520.0 | Avg: 471.65 | Eps: 0.100 | LR: 0.000010 | Steps: 2010353
+Episode 2640 | Score: 765.0 | Avg: 481.10 | Eps: 0.100 | LR: 0.000010 | Steps: 2019593
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2650 | Score: 345.0 | Avg: 472.15 | Eps: 0.100 | LR: 0.000010 | Steps: 2027755
+Episode 2660 | Score: 545.0 | Avg: 471.60 | Eps: 0.100 | LR: 0.000010 | Steps: 2035805
+Episode 2670 | Score: 345.0 | Avg: 470.65 | Eps: 0.100 | LR: 0.000010 | Steps: 2044588
+Episode 2680 | Score: 315.0 | Avg: 450.45 | Eps: 0.100 | LR: 0.000010 | Steps: 2050360
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2690 | Score: 585.0 | Avg: 450.00 | Eps: 0.100 | LR: 0.000010 | Steps: 2057948
+Episode 2700 | Score: 525.0 | Avg: 436.50 | Eps: 0.100 | LR: 0.000010 | Steps: 2064800
+Episode 2710 | Score: 940.0 | Avg: 443.75 | Eps: 0.100 | LR: 0.000010 | Steps: 2072118
+Episode 2720 | Score: 485.0 | Avg: 439.70 | Eps: 0.100 | LR: 0.000010 | Steps: 2081263
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2730 | Score: 315.0 | Avg: 434.85 | Eps: 0.100 | LR: 0.000010 | Steps: 2088585
+Episode 2740 | Score: 740.0 | Avg: 436.50 | Eps: 0.100 | LR: 0.000010 | Steps: 2097222
+Episode 2750 | Score: 335.0 | Avg: 434.50 | Eps: 0.100 | LR: 0.000010 | Steps: 2104301
+Episode 2760 | Score: 500.0 | Avg: 446.60 | Eps: 0.100 | LR: 0.000010 | Steps: 2114069
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2770 | Score: 470.0 | Avg: 448.35 | Eps: 0.100 | LR: 0.000010 | Steps: 2122338
+Episode 2780 | Score: 435.0 | Avg: 462.00 | Eps: 0.100 | LR: 0.000010 | Steps: 2130901
+Episode 2790 | Score: 530.0 | Avg: 471.15 | Eps: 0.100 | LR: 0.000010 | Steps: 2139490
+Episode 2800 | Score: 585.0 | Avg: 484.85 | Eps: 0.100 | LR: 0.000010 | Steps: 2147707
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2810 | Score: 345.0 | Avg: 484.40 | Eps: 0.100 | LR: 0.000010 | Steps: 2155559
+Episode 2820 | Score: 530.0 | Avg: 476.50 | Eps: 0.100 | LR: 0.000010 | Steps: 2163517
+Episode 2830 | Score: 300.0 | Avg: 480.50 | Eps: 0.100 | LR: 0.000010 | Steps: 2171380
+Episode 2840 | Score: 620.0 | Avg: 479.05 | Eps: 0.100 | LR: 0.000010 | Steps: 2179813
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2850 | Score: 700.0 | Avg: 499.85 | Eps: 0.100 | LR: 0.000010 | Steps: 2189366
+Episode 2860 | Score: 510.0 | Avg: 492.85 | Eps: 0.100 | LR: 0.000010 | Steps: 2198069
+Episode 2870 | Score: 670.0 | Avg: 499.80 | Eps: 0.100 | LR: 0.000010 | Steps: 2206429
+Episode 2880 | Score: 545.0 | Avg: 510.75 | Eps: 0.100 | LR: 0.000010 | Steps: 2216180
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2890 | Score: 370.0 | Avg: 496.40 | Eps: 0.100 | LR: 0.000010 | Steps: 2222810
+Episode 2900 | Score: 330.0 | Avg: 492.90 | Eps: 0.100 | LR: 0.000010 | Steps: 2231305
+Episode 2910 | Score: 470.0 | Avg: 500.70 | Eps: 0.100 | LR: 0.000010 | Steps: 2240023
+Episode 2920 | Score: 435.0 | Avg: 495.80 | Eps: 0.100 | LR: 0.000010 | Steps: 2247433
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2930 | Score: 670.0 | Avg: 496.80 | Eps: 0.100 | LR: 0.000010 | Steps: 2256014
+Episode 2940 | Score: 620.0 | Avg: 497.55 | Eps: 0.100 | LR: 0.000010 | Steps: 2265277
+Episode 2950 | Score: 315.0 | Avg: 482.10 | Eps: 0.100 | LR: 0.000010 | Steps: 2272996
+Episode 2960 | Score: 395.0 | Avg: 481.95 | Eps: 0.100 | LR: 0.000010 | Steps: 2282157
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 2970 | Score: 330.0 | Avg: 469.65 | Eps: 0.100 | LR: 0.000010 | Steps: 2289859
+Episode 2980 | Score: 270.0 | Avg: 459.25 | Eps: 0.100 | LR: 0.000010 | Steps: 2297692
+Episode 2990 | Score: 380.0 | Avg: 479.00 | Eps: 0.100 | LR: 0.000010 | Steps: 2305330
+Episode 3000 | Score: 395.0 | Avg: 478.35 | Eps: 0.100 | LR: 0.000010 | Steps: 2313726
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3010 | Score: 535.0 | Avg: 475.35 | Eps: 0.100 | LR: 0.000010 | Steps: 2322390
+Episode 3020 | Score: 355.0 | Avg: 482.90 | Eps: 0.100 | LR: 0.000010 | Steps: 2331185
+Episode 3030 | Score: 390.0 | Avg: 482.65 | Eps: 0.100 | LR: 0.000010 | Steps: 2339427
+Episode 3040 | Score: 700.0 | Avg: 482.10 | Eps: 0.100 | LR: 0.000010 | Steps: 2347886
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3050 | Score: 595.0 | Avg: 481.05 | Eps: 0.100 | LR: 0.000010 | Steps: 2355442
+Episode 3060 | Score: 755.0 | Avg: 471.00 | Eps: 0.100 | LR: 0.000010 | Steps: 2364143
+Episode 3070 | Score: 495.0 | Avg: 472.05 | Eps: 0.100 | LR: 0.000010 | Steps: 2372273
+Episode 3080 | Score: 725.0 | Avg: 478.20 | Eps: 0.100 | LR: 0.000010 | Steps: 2380698
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3090 | Score: 230.0 | Avg: 460.50 | Eps: 0.100 | LR: 0.000010 | Steps: 2387401
+Episode 3100 | Score: 465.0 | Avg: 466.55 | Eps: 0.100 | LR: 0.000010 | Steps: 2395762
+Episode 3110 | Score: 345.0 | Avg: 461.75 | Eps: 0.100 | LR: 0.000010 | Steps: 2404359
+Episode 3120 | Score: 350.0 | Avg: 457.30 | Eps: 0.100 | LR: 0.000010 | Steps: 2412386
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3130 | Score: 315.0 | Avg: 459.80 | Eps: 0.100 | LR: 0.000010 | Steps: 2420055
+Episode 3140 | Score: 345.0 | Avg: 459.45 | Eps: 0.100 | LR: 0.000010 | Steps: 2428771
+Episode 3150 | Score: 210.0 | Avg: 456.60 | Eps: 0.100 | LR: 0.000010 | Steps: 2436540
+Episode 3160 | Score: 320.0 | Avg: 460.85 | Eps: 0.100 | LR: 0.000010 | Steps: 2445210
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3170 | Score: 360.0 | Avg: 469.05 | Eps: 0.100 | LR: 0.000010 | Steps: 2453509
+Episode 3180 | Score: 545.0 | Avg: 462.80 | Eps: 0.100 | LR: 0.000010 | Steps: 2462252
+Episode 3190 | Score: 375.0 | Avg: 470.75 | Eps: 0.100 | LR: 0.000010 | Steps: 2470713
+Episode 3200 | Score: 390.0 | Avg: 468.80 | Eps: 0.100 | LR: 0.000010 | Steps: 2478566
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3210 | Score: 605.0 | Avg: 474.30 | Eps: 0.100 | LR: 0.000010 | Steps: 2488898
+Episode 3220 | Score: 555.0 | Avg: 484.80 | Eps: 0.100 | LR: 0.000010 | Steps: 2499251
+Episode 3230 | Score: 320.0 | Avg: 486.55 | Eps: 0.100 | LR: 0.000010 | Steps: 2508088
+Episode 3240 | Score: 365.0 | Avg: 492.35 | Eps: 0.100 | LR: 0.000010 | Steps: 2516851
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3250 | Score: 775.0 | Avg: 514.00 | Eps: 0.100 | LR: 0.000010 | Steps: 2527064
+Episode 3260 | Score: 210.0 | Avg: 507.80 | Eps: 0.100 | LR: 0.000010 | Steps: 2534910
+Episode 3270 | Score: 315.0 | Avg: 506.25 | Eps: 0.100 | LR: 0.000010 | Steps: 2543636
+Episode 3280 | Score: 240.0 | Avg: 493.75 | Eps: 0.100 | LR: 0.000010 | Steps: 2549755
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3290 | Score: 315.0 | Avg: 485.60 | Eps: 0.100 | LR: 0.000010 | Steps: 2556621
+Episode 3300 | Score: 465.0 | Avg: 481.45 | Eps: 0.100 | LR: 0.000010 | Steps: 2564351
+Episode 3310 | Score: 565.0 | Avg: 483.40 | Eps: 0.100 | LR: 0.000010 | Steps: 2574050
+Episode 3320 | Score: 440.0 | Avg: 478.85 | Eps: 0.100 | LR: 0.000010 | Steps: 2583303
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3330 | Score: 420.0 | Avg: 476.90 | Eps: 0.100 | LR: 0.000010 | Steps: 2592243
+Episode 3340 | Score: 345.0 | Avg: 461.35 | Eps: 0.100 | LR: 0.000010 | Steps: 2600000
+Episode 3350 | Score: 420.0 | Avg: 443.15 | Eps: 0.100 | LR: 0.000010 | Steps: 2608442
+Episode 3360 | Score: 210.0 | Avg: 448.15 | Eps: 0.100 | LR: 0.000010 | Steps: 2617471
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3370 | Score: 395.0 | Avg: 444.95 | Eps: 0.100 | LR: 0.000010 | Steps: 2625860
+Episode 3380 | Score: 755.0 | Avg: 465.50 | Eps: 0.100 | LR: 0.000010 | Steps: 2635037
+Episode 3390 | Score: 820.0 | Avg: 483.60 | Eps: 0.100 | LR: 0.000010 | Steps: 2644050
+Episode 3400 | Score: 375.0 | Avg: 492.50 | Eps: 0.100 | LR: 0.000010 | Steps: 2652126
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3410 | Score: 380.0 | Avg: 487.00 | Eps: 0.100 | LR: 0.000010 | Steps: 2660216
+Episode 3420 | Score: 470.0 | Avg: 495.00 | Eps: 0.100 | LR: 0.000010 | Steps: 2670479
+Episode 3430 | Score: 590.0 | Avg: 488.90 | Eps: 0.100 | LR: 0.000010 | Steps: 2678220
+Episode 3440 | Score: 555.0 | Avg: 505.60 | Eps: 0.100 | LR: 0.000010 | Steps: 2687757
+		RAM: 65.0% | GPU: 0.14GB | Buffer: 150000/150000
+Episode 3450 | Score: 360.0 | Avg: 501.55 | Eps: 0.100 | LR: 0.000010 | Steps: 2694920
